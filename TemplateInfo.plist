@@ -5,11 +5,11 @@
 	<key>Kind</key>
 	<string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
 	<key>Identifier</key>
-	<string>com.apple.dt.unit.bundle</string>
+	<string>com.karelia.dt.sandvox.plugin</string>
 	<key>Concrete</key>
 	<true/>
 	<key>Description</key>
-	<string>This template builds a bundle that links against the Cocoa or Core Foundation framework.</string>
+	<string>This template builds a Sandvox 2 plug-in.</string>
 	<key>SortOrder</key>
 	<integer>3</integer>
 	<key>Ancestors</key>
