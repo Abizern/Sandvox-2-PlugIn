@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Kind</key>
+	<string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
+	<key>Identifier</key>
+	<string>com.apple.dt.unit.bundle</string>
+	<key>Concrete</key>
+	<true/>
+	<key>Description</key>
+	<string>This template builds a bundle that links against the Cocoa or Core Foundation framework.</string>
+	<key>SortOrder</key>
+	<integer>3</integer>
+	<key>Ancestors</key>
+	<array>
+		<string>com.apple.dt.unit.bundleBase</string>
+		<string>com.apple.dt.unit.macBase</string>
+	</array>
+	<key>Targets</key>
+	<array>
+		<dict>
+			<key>ProductType</key>
+			<string>com.apple.product-type.bundle</string>
+			<key>SharedSettings</key>
+			<dict>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Bundles</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>bundle</string>
+			</dict>
+			<key>BuildPhases</key>
+			<array>
+				<dict>
+					<key>Class</key>
+					<string>Sources</string>
+				</dict>
+				<dict>
+					<key>Class</key>
+					<string>Frameworks</string>
+				</dict>
+				<dict>
+					<key>Class</key>
+					<string>Resources</string>
+				</dict>
+			</array>
+		</dict>
+	</array>
+	<key>Options</key>
+	<array>
+		<dict>
+			<key>Identifier</key>
+			<string>bundleFramework</string>
+			<key>Name</key>
+			<string>Framework</string>
+			<key>Description</key>
+			<string>Indicates which framework the bundle should link against.</string>
+			<key>Type</key>
+			<string>popup</string>
+			<key>Default</key>
+			<string>Core Foundation</string>
+			<key>Units</key>
+			<dict>
+				<key>Core Foundation</key>
+				<array>
+					<dict>
+						<key>Targets</key>
+						<array>
+							<dict>
+								<key>Frameworks</key>
+								<array>
+									<string>CoreFoundation</string>
+								</array>
+							</dict>
+						</array>
+						<key>Nodes</key>
+						<array>
+							<string>___PACKAGENAME___-Info.plist:bundleCoreFoundation</string>
+						</array>
+						<key>Definitions</key>
+						<dict>
+							<key>___PACKAGENAME___-Info.plist:bundleCoreFoundation</key>
+							<string>&lt;key&gt;CFPlugInDynamicRegisterFunction&lt;/key&gt;
+&lt;string&gt;&lt;/string&gt;
+&lt;key&gt;CFPlugInDynamicRegistration&lt;/key&gt;
+&lt;string&gt;NO&lt;/string&gt;
+&lt;key&gt;CFPlugInFactories&lt;/key&gt;
+&lt;dict&gt;
+	&lt;key&gt;00000000-0000-0000-0000-000000000000&lt;/key&gt;
+	&lt;string&gt;MyFactoryFunction&lt;/string&gt;
+&lt;/dict&gt;
+&lt;key&gt;CFPlugInTypes&lt;/key&gt;
+&lt;dict&gt;
+	&lt;key&gt;00000000-0000-0000-0000-000000000000&lt;/key&gt;
+	&lt;array&gt;
+		&lt;string&gt;00000000-0000-0000-0000-000000000000&lt;/string&gt;
+	&lt;/array&gt;
+&lt;/dict&gt;
+&lt;key&gt;CFPlugInUnloadFunction&lt;/key&gt;
+&lt;string&gt;&lt;/string&gt;
+</string>
+						</dict>
+					</dict>
+				</array>
+				<key>Cocoa</key>
+				<array>
+					<dict>
+						<key>Targets</key>
+						<array>
+							<dict>
+								<key>Frameworks</key>
+								<array>
+									<string>Cocoa</string>
+								</array>
+								<key>OtherFrameworks</key>
+								<array>
+									<string>AppKit</string>
+									<string>CoreData</string>
+									<string>Foundation</string>
+								</array>
+							</dict>
+						</array>
+						<key>Nodes</key>
+						<array>
+							<string>___PACKAGENAME___-Info.plist:bundleCocoa</string>
+						</array>
+						<key>Definitions</key>
+						<dict>
+							<key>___PACKAGENAME___-Info.plist:bundleCocoa</key>
+							<string>&lt;key&gt;NSPrincipalClass&lt;/key&gt;
+&lt;string&gt;&lt;/string&gt;
+</string>
+						</dict>
+					</dict>
+				</array>
+			</dict>
+		</dict>
+	</array>
+	<key>Nodes</key>
+	<array>
+		<string>___PACKAGENAME___-Prefix.pch:objC:importCocoa</string>
+		<string>___PACKAGENAME___-Info.plist:bundle</string>
+		<string>___PACKAGENAME___-Info.plist:NSHumanReadableCopyright</string>
+	</array>
+	<key>Definitions</key>
+	<dict>
+		<key>___PACKAGENAME___-Info.plist:bundle</key>
+		<string>&lt;key&gt;CFBundleDevelopmentRegion&lt;/key&gt;
+&lt;string&gt;English&lt;/string&gt;
+&lt;key&gt;CFBundleExecutable&lt;/key&gt;
+&lt;string&gt;${EXECUTABLE_NAME}&lt;/string&gt;
+&lt;key&gt;CFBundleName&lt;/key&gt;
+&lt;string&gt;${PRODUCT_NAME}&lt;/string&gt;
+&lt;key&gt;CFBundleIconFile&lt;/key&gt;
+&lt;string&gt;&lt;/string&gt;
+&lt;key&gt;CFBundleInfoDictionaryVersion&lt;/key&gt;
+&lt;string&gt;6.0&lt;/string&gt;
+&lt;key&gt;CFBundlePackageType&lt;/key&gt;
+&lt;string&gt;BNDL&lt;/string&gt;
+&lt;key&gt;CFBundleSignature&lt;/key&gt;
+&lt;string&gt;????&lt;/string&gt;
+&lt;key&gt;CFBundleVersion&lt;/key&gt;
+&lt;string&gt;1&lt;/string&gt;
+&lt;key&gt;CFBundleShortVersionString&lt;/key&gt;
+&lt;string&gt;1.0&lt;/string&gt;
+</string>
+	</dict>
+</dict>
+</plist>
