@@ -14,7 +14,15 @@ The directory for custom Xcode 4 projects is (you may need to create this):
 
 Under this create a folder that will identify your group of personal templates, in my case I've gone for `My Templates` and I've extracted these files under that, to give this:
 
-   ~/Library/Developer/Xcode/Templates/Sandvox 2 PlugIn.xctemplate/
+    ~/Library/Developer/Xcode/Templates/Sandvox 2 PlugIn.xctemplate/
+
+## Development
+
+If you have any requests, bug reports or patches please send them to me.
+
+## Acknowledgemets
+
+The icon for this project template is the property or Karelia software and is used with their permission. Regardless of the licence below, this icon is not open source.
     
 ## Licence
 
