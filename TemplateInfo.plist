@@ -85,7 +85,17 @@
 				<key>INSTALL_PATH</key>
 				<string>$(LOCAL_LIBRARY_DIR)/Bundles</string>
 				<key>WRAPPER_EXTENSION</key>
-				<string>bundle</string>
+				<string>svxElement</string>
+                <key>HEADER_SEARCH_PATHS</key>
+                <string>/Applications/Sandvox.app/Contents/Headers</string>
+                <key>BUNDLE_LOADER</key>
+                <string>/Applications/Sandvox.app/Contents/MacOS/Sandvox</string>
+                <key>ARCHS</key>
+                <string>$(ARCHS_STANDARD_32_BIT)</string>
+                <key>VALID_ARCHS</key>
+                <string>i386</string>
+                <key>CONFIGURATION_BUILD_DIR</key>
+                <string>~/Library/Application Support/Sandvox/PlugIns/</string>
 			</dict>
 		</dict>
 	</array>
