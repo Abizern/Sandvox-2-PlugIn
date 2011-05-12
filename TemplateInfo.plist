@@ -11,6 +11,8 @@
 	<true/>
 	<key>Definitions</key>
 	<dict>
+		<key>___PACKAGENAME___-Prefix.pch:sandvox</key>
+		<string>#import &lt;Sandvox.h&gt;</string>
 		<key>___PACKAGENAME___-Info.plist:svplugin</key>
 		<string>&lt;key&gt;CFBundleDevelopmentRegion&lt;/key&gt;
 &lt;string&gt;English&lt;/string&gt;
@@ -44,7 +46,7 @@
 	<string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
 	<key>Nodes</key>
 	<array>
-		<string>___PACKAGENAME___-Prefix.pch:objC:importCocoa</string>
+		<string>___PACKAGENAME___-Prefix.pch:sandvox</string>
 		<string>___PACKAGENAME___-Info.plist:svplugin</string>
 		<string>___PACKAGENAME___-Info.plist:NSHumanReadableCopyright</string>
 	</array>
@@ -86,16 +88,16 @@
 				<string>$(LOCAL_LIBRARY_DIR)/Bundles</string>
 				<key>WRAPPER_EXTENSION</key>
 				<string>svxElement</string>
-                <key>HEADER_SEARCH_PATHS</key>
-                <string>/Applications/Sandvox.app/Contents/Headers</string>
-                <key>BUNDLE_LOADER</key>
-                <string>/Applications/Sandvox.app/Contents/MacOS/Sandvox</string>
-                <key>ARCHS</key>
-                <string>$(ARCHS_STANDARD_32_BIT)</string>
-                <key>VALID_ARCHS</key>
-                <string>i386</string>
-                <key>CONFIGURATION_BUILD_DIR</key>
-                <string>~/Library/Application Support/Sandvox/PlugIns/</string>
+				<key>HEADER_SEARCH_PATHS</key>
+				<string>/Applications/Sandvox.app/Contents/Headers</string>
+				<key>BUNDLE_LOADER</key>
+				<string>/Applications/Sandvox.app/Contents/MacOS/Sandvox</string>
+				<key>ARCHS</key>
+				<string>$(ARCHS_STANDARD_32_BIT)</string>
+				<key>VALID_ARCHS</key>
+				<string>i386</string>
+				<key>CONFIGURATION_BUILD_DIR</key>
+				<string>~/Library/Application Support/Sandvox/PlugIns/</string>
 			</dict>
 		</dict>
 	</array>
