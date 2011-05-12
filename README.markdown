@@ -14,7 +14,7 @@ The directory for custom Xcode 4 projects is (you may need to create this):
 
 Under this create a folder that will identify your group of personal templates, in my case I've gone for `My Templates` and I've extracted these files under that, to give this:
 
-    ~/Library/Developer/Xcode/Templates/Sandvox 2 PlugIn.xctemplate/
+    ~/Library/Developer/Xcode/Templates/My Templates/Sandvox 2 PlugIn.xctemplate/
 
 ## Remaining Tasks
 
