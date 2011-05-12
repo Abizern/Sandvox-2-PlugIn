@@ -11,8 +11,23 @@
 	<true/>
 	<key>Definitions</key>
 	<dict>
+        <key>___PACKAGENAME___PlugIn.h:main</key>
+        <string>#import &lt;Sandvox.h&gt;;
+
+@interface ____PACKAGENAME___PlugIn : SVPlugIn {
+
+}
+@end
+</string>
 		<key>___PACKAGENAME___-Prefix.pch:sandvox</key>
 		<string>#import &lt;Sandvox.h&gt;</string>
+        <key>___PACKAGENAME___PlugIn.m:main</key>
+        <string>#import "___PACKAGENAME___PlugIn.h";
+
+@implementation ___PACKAGENAME___PlugiIn
+
+@end
+</string>
 		<key>___PACKAGENAME___-Info.plist:svplugin</key>
 		<string>&lt;key&gt;CFBundleDevelopmentRegion&lt;/key&gt;
 &lt;string&gt;English&lt;/string&gt;
@@ -49,6 +64,10 @@
 		<string>___PACKAGENAME___-Prefix.pch:sandvox</string>
 		<string>___PACKAGENAME___-Info.plist:svplugin</string>
 		<string>___PACKAGENAME___-Info.plist:NSHumanReadableCopyright</string>
+        <string>___PACKAGENAME___PlugIn.h:comments</string>
+        <string>___PACKAGENAME___PlugIn.h:main</string>
+        <string>___PACKAGENAME___PlugIn.m:comments</string>
+        <string>___PACKAGENAME___PlugIn.m:main</string>
 	</array>
 	<key>SortOrder</key>
 	<integer>3</integer>
