@@ -12,9 +12,9 @@
 	<key>Definitions</key>
 	<dict>
         <key>___PACKAGENAME___PlugIn.h:main</key>
-        <string>#import &lt;Sandvox.h&gt;;
+        <string>#import &lt;Sandvox.h&gt;
 
-@interface ____PACKAGENAME___PlugIn : SVPlugIn {
+@interface ___PACKAGENAME___PlugIn : SVPlugIn {
 
 }
 @end
@@ -22,12 +22,17 @@
 		<key>___PACKAGENAME___-Prefix.pch:sandvox</key>
 		<string>#import &lt;Sandvox.h&gt;</string>
         <key>___PACKAGENAME___PlugIn.m:main</key>
-        <string>#import "___PACKAGENAME___PlugIn.h";
+        <string>#import "___PACKAGENAME___PlugIn.h"
 
-@implementation ___PACKAGENAME___PlugiIn
+@implementation ___PACKAGENAME___PlugIn
 
 @end
 </string>
+        <key>en.lproj/Inspector.xib</key>
+        <dict>
+            <key>Path</key>
+            <string>Inspector.xib</string>
+        </dict>
 		<key>___PACKAGENAME___-Info.plist:svplugin</key>
 		<string>&lt;key&gt;CFBundleDevelopmentRegion&lt;/key&gt;
 &lt;string&gt;English&lt;/string&gt;
@@ -68,6 +73,7 @@
         <string>___PACKAGENAME___PlugIn.h:main</string>
         <string>___PACKAGENAME___PlugIn.m:comments</string>
         <string>___PACKAGENAME___PlugIn.m:main</string>
+        <string>en.lproj/Inspector.xib</string>
 	</array>
 	<key>SortOrder</key>
 	<integer>3</integer>
