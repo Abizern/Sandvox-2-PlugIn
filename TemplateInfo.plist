@@ -11,8 +11,8 @@
 	<true/>
 	<key>Definitions</key>
 	<dict>
-        <key>___PACKAGENAME___PlugIn.h:main</key>
-        <string>#import &lt;Sandvox.h&gt;
+		<key>___PACKAGENAME___PlugIn.h:main</key>
+		<string>#import &lt;Sandvox.h&gt;
 
 @interface ___PACKAGENAME___PlugIn : SVPlugIn {
 
@@ -21,18 +21,13 @@
 </string>
 		<key>___PACKAGENAME___-Prefix.pch:sandvox</key>
 		<string>#import &lt;Sandvox.h&gt;</string>
-        <key>___PACKAGENAME___PlugIn.m:main</key>
-        <string>#import "___PACKAGENAME___PlugIn.h"
+		<key>___PACKAGENAME___PlugIn.m:main</key>
+		<string>#import "___PACKAGENAME___PlugIn.h"
 
 @implementation ___PACKAGENAME___PlugIn
 
 @end
 </string>
-        <key>en.lproj/Inspector.xib</key>
-        <dict>
-            <key>Path</key>
-            <string>Inspector.xib</string>
-        </dict>
 		<key>___PACKAGENAME___-Info.plist:svplugin</key>
 		<string>&lt;key&gt;CFBundleDevelopmentRegion&lt;/key&gt;
 &lt;string&gt;English&lt;/string&gt;
@@ -69,11 +64,10 @@
 		<string>___PACKAGENAME___-Prefix.pch:sandvox</string>
 		<string>___PACKAGENAME___-Info.plist:svplugin</string>
 		<string>___PACKAGENAME___-Info.plist:NSHumanReadableCopyright</string>
-        <string>___PACKAGENAME___PlugIn.h:comments</string>
-        <string>___PACKAGENAME___PlugIn.h:main</string>
-        <string>___PACKAGENAME___PlugIn.m:comments</string>
-        <string>___PACKAGENAME___PlugIn.m:main</string>
-        <string>en.lproj/Inspector.xib</string>
+		<string>___PACKAGENAME___PlugIn.h:comments</string>
+		<string>___PACKAGENAME___PlugIn.h:main</string>
+		<string>___PACKAGENAME___PlugIn.m:comments</string>
+		<string>___PACKAGENAME___PlugIn.m:main</string>
 	</array>
 	<key>SortOrder</key>
 	<integer>3</integer>
@@ -123,6 +117,79 @@
 				<string>i386</string>
 				<key>CONFIGURATION_BUILD_DIR</key>
 				<string>~/Library/Application Support/Sandvox/PlugIns/</string>
+			</dict>
+		</dict>
+	</array>
+	<key>Options</key>
+	<array>
+		<dict>
+			<key>Identifier</key>
+			<string>inspector</string>
+			<key>Name</key>
+			<string>Custom View Controller</string>
+			<key>NotPersisted</key>
+			<true/>
+			<key>Description</key>
+			<string>Creates a custom view controller for the inspector panel in the unlikely event that you need one.</string>
+			<key>Type</key>
+			<string>checkbox</string>
+			<key>Default</key>
+			<string>false</string>
+			<key>Units</key>
+			<dict>
+				<key>true</key>
+				<array>
+					<dict>
+						<key>Definitions</key>
+						<dict>
+							<key>___PACKAGENAME___Inspector.h:main</key>
+							<string>#import &lt;Sandvox.h&gt;
+
+@interface ___PACKAGENAME___Inspector : SVInspectorViewController {
+
+}
+@end
+</string>
+							<key>___PACKAGENAME___Inspector.m:main</key>
+							<string>#import "___PACKAGENAME___Inspector.h"
+
+@implementation ___PACKAGENAME___Inspector
+
+@end
+</string>
+							<key>en.lproj/Inspector.xib</key>
+							<dict>
+								<key>Path</key>
+								<string>InspectorWithController.xib</string>
+							</dict>
+						</dict>
+						<key>Nodes</key>
+						<array>
+							<string>___PACKAGENAME___Inspector.h:comments</string>
+							<string>___PACKAGENAME___Inspector.h:main</string>
+							<string>___PACKAGENAME___Inspector.m:comments</string>
+							<string>___PACKAGENAME___Inspector.m:main</string>
+							<string>en.lproj/Inspector.xib</string>
+						</array>
+					</dict>
+				</array>
+				<key>false</key>
+				<array>
+					<dict>
+						<key>Definitions</key>
+						<dict>
+							<key>en.lproj/Inspector.xib</key>
+							<dict>
+								<key>Path</key>
+								<string>Inspector.xib</string>
+							</dict>
+						</dict>
+						<key>Nodes</key>
+						<array>
+							<string>en.lproj/Inspector.xib</string>
+						</array>
+					</dict>
+				</array>
 			</dict>
 		</dict>
 	</array>
