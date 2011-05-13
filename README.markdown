@@ -21,10 +21,6 @@ Under this create a folder that will identify your group of personal templates, 
 After creating a template, there are still some tasks that will need to be done:
 
 * Set Sandvox as the executable to be run when debugging. (See "Debugging With Sandvox").
-* Add an icon.
-* Create the main PlugIn class and make sure that it is the one listed under NSPrincipalClass in the Info.plist.
-* Create the xib file and configure it correctly.
-* Create an SVInspectorViewController subclass to be a view controller for this inspector as required.
 
 ## Development
 
